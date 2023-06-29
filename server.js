@@ -9,7 +9,7 @@ const { app } = require('./app')
 const main = async () => {
     try {
       await sequelize.authenticate();
-      await sequelize.sync({ force: true, alter: false})
+      await sequelize.sync({ force: false, alter: false})
       await User.bulkCreate(userBulk)
       await Bootcamp.bulkCreate(bootcampBulk);
       await manyBulk(1,1);
