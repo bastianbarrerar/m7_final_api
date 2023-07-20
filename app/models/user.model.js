@@ -22,6 +22,14 @@ const User = sequelize.define(
         is: /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g,
       },
     },
+
+    password: {
+      type: DataTypes.STRING(255),
+      allowNull: false,
+      validate: {
+        is: /.{8}/,
+      },
+    },
   },
   {
     timestamps: true,

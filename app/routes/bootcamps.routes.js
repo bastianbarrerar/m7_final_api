@@ -1,13 +1,22 @@
 const bootcampController = require("../controllers/bootcamp.controller");
+const { authenticateToken } = require("../middleware/auth");
 
 const router = require("express").Router();
 
-router.get("/", bootcampController.findAll);
-router.get("/all", bootcampController.getBootcampUsers)
-router.get("/all/:id", bootcampController.getBootcampUsersById)
-router.post("/add", bootcampController.createBootcamp);
-router.get("/:id", bootcampController.findById);
-router.post('/:bootcamp_id/add/:user_id', bootcampController.addUser);
+router.get("/", authenticateToken, bootcampController.findAll);
+router.get("/all", authenticateToken, bootcampController.getBootcampUsers);
+router.get(
+  "/all/:id",
+  authenticateToken,
+  bootcampController.getBootcampUsersById
+);
+router.post("/add", authenticateToken, bootcampController.createBootcamp);
+router.get("/:id", authenticateToken, bootcampController.findById);
+router.post(
+  "/:bootcamp_id/add/:user_id",
+  authenticateToken,
+  bootcampController.addUser
+);
 
 
 module.exports = router;

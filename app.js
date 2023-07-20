@@ -9,7 +9,7 @@ app.use(express.urlencoded({extended: true}))
 
 //routes
 app.use("/api/v1/users", require("./app/routes/users.routes"));
-app.use("/api/v1/bootcamps", require("./app/routes/bootcamps.routes"))
+app.use("/api/v1/bootcamps", require("./app/routes/bootcamps.routes"));
 
 
 //root
