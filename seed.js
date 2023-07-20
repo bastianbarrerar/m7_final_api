@@ -5,25 +5,25 @@ const userBulk = [
     firstName: "Mateo",
     lastName: "Diaz",
     email: "mateo.diaz@correo.com",
-    password: "mateo123456",
+    password: "$2b$10$pN6uJ2It3K8YgSl6puDYZ.aBgMp2LL9PLGI0mYdNm1fSj0wn4nnKW",
   },
   {
     firstName: "Santiago",
     lastName: "Mejias",
     email: "santiago.mejias@correo.com",
-    password: "santiago123456",
+    password: "$2b$10$0r8bGWOCZr.h.KeofXGwiuIyLWFNYgOUi/3r442thbJEtoAzKn8ze",
   },
   {
     firstName: "Lucas",
     lastName: "Rojas",
     email: "lucas.rojas@correo.com",
-    password: "lucas123456",
+    password: "$2b$10$b7hq.kl5miurRr2Uf3hw2.DZ1zEmFziWVdEyo888idRrA7phHZ7aC",
   },
   {
     firstName: "Facundo",
     lastName: "Fernandez",
     email: "facundo.fernandez@correo.com",
-    password: "facundo123456",
+    password: "$2b$10$SwfJWr60ufCsD3AHaJVwBua9s5l1Zf5ht9lljwejTLT/YatGtsU/e",
   },
 ];
 const bootcampBulk = [

@@ -19,4 +19,5 @@ router.post(
 );
 
 
+http://localhost:3000/api/v1/bootcamps/  => lista todos los bootcamps
 module.exports = router;

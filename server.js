@@ -9,15 +9,15 @@ const { app } = require('./app');
 (async () => {
     try {
       await sequelize.authenticate();
-      await sequelize.sync({ force: false, alter: false})
-      // await User.bulkCreate(userBulk)
-      // await Bootcamp.bulkCreate(bootcampBulk);
-      // await manyBulk(1,1);
-      // await manyBulk(2, 1);
-      // await manyBulk(1, 2);
-      // await manyBulk(1, 3);
-      // await manyBulk(2, 3);
-      // await manyBulk(3, 3);
+      await sequelize.sync({ force: true, alter: true})
+      await User.bulkCreate(userBulk)
+      await Bootcamp.bulkCreate(bootcampBulk);
+      await manyBulk(1,1);
+      await manyBulk(2, 1);
+      await manyBulk(1, 2);
+      await manyBulk(1, 3);
+      await manyBulk(2, 3);
+      await manyBulk(3, 3);
       app.listen(process.env.PORT, () => {
         console.log(`server listening to port ${process.env.PORT}`);
       });
