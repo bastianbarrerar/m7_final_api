@@ -6,6 +6,8 @@ Realizar las siguientes consultas:
       http://localhost:3000/api/v1/users/signup (POST)
       http://localhost:3000/api/v1/users/login (GET)
 
+pueden autenticarse los 4 usuarios detallados en el documento con su correo y contrasena
+
 al hacer log in se entrega el token JWT para agrearse en el authorization bearer del header de cada consulta, se agrega api.rest para hacer uso en pluggin api rest de VSCode a modo de ejemplo
 
 
